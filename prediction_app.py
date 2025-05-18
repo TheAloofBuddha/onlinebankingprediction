@@ -18,7 +18,7 @@ country_encoder = joblib.load('country_encoder.joblib')
 st.title('Supervised Classification Machine Learning Model')
 st.header('customer Online Banking Prediction')
 
-column_desc = pd.read_csv(r'C:\Users\PC\Documents\data science GMC\financial_dataset_model\VariableDefinitions (1).csv',header=1)
+column_desc = pd.read_csv("VariableDefinitions (1).csv",header=1)
 st.write("The dataset contains information about customers' online banking usage, including their demographics, account details, and transaction history. The goal is to predict whether a customer will use online banking services or not.")
 st.dataframe(column_desc)
 
